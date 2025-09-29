@@ -11,13 +11,19 @@
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Portfolio</h1>
-            <button class="hamburger" id="hamburger">☰</button>
+            <h1 class="logo">
+                <a href="#">Portfolio</a>
+            </h1>
+
+            <div class="nav-actions">
+                <button id="theme-toggle">🌙</button>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+
             <ul class="nav-links" id="nav-links">
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#projects">Projects</a></li> -->
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="theme-toggle">🌙</button></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +32,7 @@
         <h2>Hello, I am <span>Rick Gavin Dela Cruz</span></h2>
         <p>A Full Stack Developer</p>
         <!-- <a href="#projects" class="btn">View My Work</a> -->
+        <a href="#about" class="btn">About Me</a>
     </section>
 
     <section id="about">
@@ -54,13 +61,13 @@
         <h2>Contact</h2>
         <p>Let's connect!</p>
         <div class="contact-links">
-            <a href="mailto:rickgavinartuzdelacruz@gmail.com" target="_blank" title="Email">
+            <a href="mailto:rickgavinartuzdelacruz@gmail.com" rel="noopener noreferrer" target="_blank" title="Email" aria-label="Email">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://github.com/Xvareon" target="_blank" title="GitHub">
+            <a href="https://github.com/Xvareon" rel="noopener noreferrer" target="_blank" title="GitHub" aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/rick-gavin-dela-cruz-1a22b4268" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/rick-gavin-dela-cruz-1a22b4268" rel="noopener noreferrer" target="_blank" title="LinkedIn" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
