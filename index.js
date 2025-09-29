@@ -4,19 +4,27 @@ const body = document.body;
 
 // Check saved theme on load
 if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark");
-  toggleBtn.textContent = "☀️"; // sun icon for switching back
+    body.classList.add("dark");
+    toggleBtn.textContent = "☀️"; // sun icon for switching back
 }
 
 // Toggle theme on button click
 toggleBtn.addEventListener("click", () => {
-  body.classList.toggle("dark");
+    body.classList.toggle("dark");
 
-  if (body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-    toggleBtn.textContent = "☀️";
-  } else {
-    localStorage.setItem("theme", "light");
-    toggleBtn.textContent = "🌙";
-  }
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙";
+    }
+});
+
+// Hamburger toggle
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
 });
