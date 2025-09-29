@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Rick Gavin Dela Cruz's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Rick Gavin Dela Cruz</h1>
+            <h1 class="logo">Portfolio</h1>
             <button class="hamburger" id="hamburger">☰</button>
             <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
             <li><a href="#contact">Contact</a></li>
             <li><button id="theme-toggle">🌙</button></li>
             </ul>
@@ -21,30 +23,47 @@
     </header>
 
     <section class="hero">
-        <h2>Hello, I'm <span>Rick Gavin Dela Cruz</span></h2>
+        <h2>Hello, I am <span>Rick Gavin Dela Cruz</span></h2>
         <p>A Full Stack Developer</p>
-        <a href="#projects" class="btn">View My Work</a>
+        <!-- <a href="#projects" class="btn">View My Work</a> -->
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Lorem Ipsum</p>
+        <p>
+            I am a Full Stack Developer with hands-on experience building and contributing to a wide range of web-based projects. I thrive in collaborative environments, bringing strong communication skills and a team-oriented mindset to every project.
+        </p>
+        <p>
+            I’m passionate about coding, continuously learning new technologies, and following best practices to deliver clean, efficient, and scalable solutions. With a solid work ethic and a commitment to professional growth, I enjoy turning ideas into functional, user-friendly applications.
+        </p>
+        <p>
+            Always open to connecting — feel free to reach out!
+        </p>
     </section>
 
-    <section id="projects">
+    <!-- <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Project Title</h3>
             <p>Project Description</p>
             <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
         </div>
-        <!-- Add more project-cards -->
-    </section>
+    </section> -->
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Let's connect!</p>
-        <p>Email: <a href="mailto:rickgavinartuzdelacruz@gmail.com">rickgavinartuzdelacruz@gmail.com</a></p>
+        <div class="contact-links">
+            <a href="mailto:rickgavinartuzdelacruz@gmail.com" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Xvareon" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rick-gavin-dela-cruz-1a22b4268" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
     </section>
 
     <footer>

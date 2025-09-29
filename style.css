@@ -156,10 +156,32 @@ section h2 {
     text-decoration: underline;
 }
 
+/* ========== About ========== */
+#about p {
+	margin-bottom: 1rem; /* adds spacing between paragraphs */
+}
+
 /* ========== Contact ========== */
 #contact p {
     text-align: center;
     margin: 0.5rem 0;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 1rem;
+	font-size: 2rem; /* icon size */
+}
+
+.contact-links a {
+	color: var(--text);
+	transition: color 0.3s;
+}
+
+.contact-links a:hover {
+	color: var(--accent);
 }
 
 /* ========== Footer ========== */
